@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <style>
+        
+            /* Selectors:
+            1.Universal selector:
+            - this may be used to remove browser default padding from all the pages or text
+         */
+        * {
+            margin: 0;
+        }
+
+        /* 
+        2. Type selector
+         - this can be used to change the text.
+         */
+        h1{
+            font-size: x-small;
+        }
+         p{
+            font-size: large;
+            margin: 10px 20px 30px 40px;
+         }
+/* 
+3. Class selector:
+ -this can be used to apply changes to selected or same class 
+*/
+.op{
+    color: aqua;
+}
+
+/* 
+4. Id selector:
+-this can be used to change specific id tag or components.
+*/
+#pk{
+    color: blueviolet;
+}
+
+/* 
+5. Attribute selectors: 
+- this can be used to change specific attributes like input attribute color etc.
+*/
+input[type="text"]{
+    border: 10px solid #2c2c2c;
+}
+
+/* 
+6. Decendent selector: 
+- this is used to apply changes to a specific part of an tag(parent tag).
+*/
+article p{
+    font-style: italic;
+    background-color: blue;
+}
+
+/* 
+7. Child selector;
+- we will select the not the descendent.
+*/
+nav > ul{
+color: brown;
+}
+    </style>
+         <div>
+             <hgroup>
+                 <h1 id="pk">learn to create website</h1>
+                 <h2 >here you are 
+                     <input type="text">
+                    </h2>
+                    <!-- there is a time tag we might not use it -->
+                    <article>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, impedit?</p>
+                    </article>
+            <h3 class="op"> <time datetime="22-06-2025">Date</time></h3>
+            <p>Lorem, ipsum dolor.</p>
+            <p class="op">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi voluptas explicabo atque minus itaque modi dolores fugit dolore dignissimos reiciendis magnam maiores, dolorum laborum voluptatibus aliquam sint molestias quod odit. Aperiam tempore autem doloremque dignissimos voluptates. Laudantium, debitis veritatis consequatur, quidem officia ab temporibus accusantium reiciendis quam sit nisi ipsam.</p>
+        </hgroup>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">home</a>the</li>  
+            <li><a href="#">about</a>this </li>
+            <li><a id="pk" href="#">contact us</a>there</li>
+        </ul>
+    </nav>
+    <ul>
+        <li>this is a child</li>
+        <li>this is a child</li>
+    </ul>
+    <section>
+        <h5>this is a section</h5>
+        <h5>this is a section</h5>
+        <h5>this is a section</h5>
+    </section>
+    <footer>
+        <address>add your address here</address>
+        <p>&copy; sahil 2025</p>
+    </footer>
+ </body>
+ </html> 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+</head>
+<body>
+    <style>
+
+        /* 
+        padding means side wise gap
+        margin means uppper and lower gap
+        */
+        body{
+            margin: 0%;
+            background-color: black;
+            color: antiquewhite;
+            padding: 0%;
+        }
+.navigation-container{
+    margin-bottom: 30px;
+}
+        .nav1{
+background-color: bisque;
+color: black;
+padding: 10px;
+        }
+
+.nav1 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: cadetblue;
+    font-size: small;
+    cursor: default;
+}
+#Signup{
+    background-color: yellowgreen;
+}
+
+/* you can use this to make changes in all li's of an navbar */
+.nav1 li{
+    display: inline;
+text-decoration: none;
+color: black;
+/* background-color: #d45b04; */
+}
+
+/* you can use this to make changes in a tags of an navbar */
+.nav1 a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    /* padding: 13px 20px; */
+/* for now let it empty */
+}
+.nav1 a::after{
+    /* this always needs some content inside
+    first this executes then hover command executes */
+
+    /* 
+    this is very nice and important property explore it later
+    */
+content: "";
+position: absolute;
+height: 2px;
+width: 100%;
+bottom: 0px;
+right: 0px;
+background-color: rgb(9, 186, 245);
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 0.3s
+ease-in-out;
+}
+.nav1 a:hover::after{
+    transform: scaleX(1);
+}
+
+    </style>
+    <!-- 
+    ::after/something else in place of after is used to add new elements
+    -->
+    <div class="navigation-container">
+        <h2>Horizontal with underline effect</h2>
+        <nav id="1" class="nav1">
+        <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Account</a></li>
+                <button id="login"><a href="#">Login</a></button>
+                <button id="Signup"><a href="#">Signup</a></button>
+            </ul>
+        </nav>
+    </div>
+    <div class="navigation-container">
+        <h2>vertical with hover effect</h2>
+    <nav id="2" class="nav2">
+    <ul>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">Java</a></li>
+        </ul>
+    </nav>
+    <div class="navigation-container">
+        <h2>Horizontal with dropdown</h2>
+        <nav id="3" class="nav3">
+    <nav id="3" class="nav3">
+        <ul>
+            <li><a href="#">Sahil</a></li>
+            <li><a href="#">Pritam</a></li>
+        </ul>
+    </nav>
+</html>
