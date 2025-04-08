@@ -1,4 +1,4 @@
-console.log("just here be productive");
+console.log("just here be productive"); //most common way to print in js
 
 // part 1 of series
 process.stdout.write("Hello, "); //other way to print
