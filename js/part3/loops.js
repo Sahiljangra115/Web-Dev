@@ -24,7 +24,7 @@ do {
   }
 } while (tea !== "stop");
 
-4th challenge
+//4th challenge
 let total = 0;
 let j = 0;
 do {
@@ -33,7 +33,7 @@ do {
 } while (j < 4); // if it is true then the loop runs again else it goes outside the loop
 console.log(total);
 
-5th challenge
+//5th challenge
 
 let array = [2, 4, 6];
 let multiply = [];
