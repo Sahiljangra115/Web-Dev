@@ -1,0 +1,23 @@
+Boolean() is used to convert the input in true or false based on some rules.
+parseInt() is used to convert a string format of an number in number type.
+Number() is a global method to convert input to the number
+
+
+These will convert:
+
+Number("3.14")
+Number(Math.PI)
+Number(" ")
+Number("")
+
+These will not convert:
+
+Number("99 88")
+Number("John")
+
+you can use mdn docs TYPE COERCION for the type conversion functions.
+
+isNaN() is a function in js to find whether the output/input in NaN or not.
+we should not use output/input !== NaN or == NaN because NaN is not equal to anything including itself so these values will always be wrong.
+
+we can use [... set(array)] to remove any duplicacy from the array.
