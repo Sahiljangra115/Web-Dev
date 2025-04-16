@@ -1,5 +1,5 @@
 // WE can create an class with a better method known as --->  constructor function
-
+// the constructor (function) works as an class
 function Person(name, age) {
   //constructor functions have 1st letter of function name as Capital letter
   this.name = name;
