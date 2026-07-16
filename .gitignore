@@ -1,0 +1,15 @@
+# Auto-added by cleanup script
+__pycache__/
+*.pyc
+.DS_Store
+.claude/
+.gemini/
+.playwright-mcp/
+graphify-out/
+backend/graphify-out/
+.venv/
+venv/
+env/
+node_modules/
+a.out
+*.log
